@@ -17,9 +17,6 @@
 # Sample: This is where we'd set a backup provider if we had one
 # $(call inherit-product, device/sample/products/backup_overlay.mk)
 
-# Get the prebuilt list of APNs
-$(call inherit-product, vendor/omni/config/gsm.mk)
-
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
@@ -31,13 +28,8 @@ PRODUCT_PACKAGES += \
     charger \
     file_contexts_text
 
-PRODUCT_NAME := omni_onyx
-PRODUCT_DEVICE := onyx
+PRODUCT_NAME := omni_bacon
+PRODUCT_DEVICE := bacon
 PRODUCT_BRAND := OnePlus
-PRODUCT_MODEL := OnePlus X
+PRODUCT_MODEL := A0001
 PRODUCT_MANUFACTURER := OnePlus
-
-# enable stock zip packages flash
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.build.product=OnePlus \
-    ro.product.device=OnePlus
