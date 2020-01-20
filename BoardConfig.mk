@@ -27,8 +27,8 @@ BOARD_KERNEL_IMAGE_NAME   := zImage
 TARGET_KERNEL_ARCH        := arm
 TARGET_KERNEL_CONFIG      := bacon_defconfig
 TARGET_KERNEL_SOURCE      := kernel/oneplus/msm8974
-KERNEL_TOOLCHAIN          := $(shell pwd)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-linux-androideabi-4.9/bin
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androidkernel-
+KERNEL_TOOLCHAIN          := $(shell pwd)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-linaro-7/bin
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-eabi-
 
 BOARD_FLASH_BLOCK_SIZE               := 131072
 BOARD_BOOTIMAGE_PARTITION_SIZE       := 16777216
